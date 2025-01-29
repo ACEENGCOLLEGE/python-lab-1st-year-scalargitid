@@ -32,7 +32,9 @@ jobs:
         test-name: T2
         setup-command: ''
         command: python3 solution.py
-        input: 2+3
+        input: |-
+          2
+          3
         expected-output: '5'
         comparison-method: exact
         timeout: 10
@@ -45,8 +47,8 @@ jobs:
         setup-command: ''
         command: python3 solution.py
         input: |-
-          8,9
-          6,3
+          8 9
+          6 3
         expected-output: |-
           17
           9
